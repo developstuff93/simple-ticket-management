@@ -1,0 +1,32 @@
+.Ticket {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem 0.3rem 0 3rem;
+  min-width: 160px;
+  width: fit-content;
+}
+
+.TicketStatus {
+  border: 1px solid #d69191;
+  width: fit-content;
+  min-width: 135px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+
+  > div:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2.5px);
+    border-top: 5px solid black;
+    left: -27px;
+    width: 20px;
+  }
+}
+
+.ChildTicketContainer {
+}
